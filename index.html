@@ -44,7 +44,7 @@
     device-orientation-permission-ui="enabled: true">
 
     <a-assets>
-      <img id="mesa" src="assets/mesa_comprimida.glb" />
+      
       <a-asset-item id="mesa3d" src="assets/mesa_comprimida.glb"></a-asset-item>
   
     </a-assets>
@@ -61,14 +61,12 @@
     </a-entity>
     
     <a-entity mindar-image-target="targetIndex: 1">
-   <a-plane
-        src="#mesa"
+   <a-gltf-model
+        src="#mesa3d"
         position="0 0 0"
         rotation="0 0 0"
-        width="1"
-        height="0.7"
-        transparent="true">
-      </a-plane>
+        scale="0.3 0.3 0.3">
+      </a-gltf-model>
   </a-scene>
 </body>
 </html>
