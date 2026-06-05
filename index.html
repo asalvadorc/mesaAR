@@ -45,14 +45,15 @@
 
     <a-assets>
       <img id="mesa" src="assets/mesa_comprimida.glb" />
-      
+      <a-asset-item id="mesa3d" src="assets/mesa_comprimida.glb"></a-asset-item>
+  
     </a-assets>
 
     <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
 
     <a-entity mindar-image-target="targetIndex: 0">
       <a-gltf-model
-        src="#mesa"
+        src="#mesa3d"
         position="0 0 0"
         rotation="0 0 0"
         scale="0.3 0.3 0.3">
