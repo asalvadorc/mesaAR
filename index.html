@@ -42,44 +42,33 @@
     renderer="colorManagement: true, physicallyCorrectLights"
     vr-mode-ui="enabled: false"
     device-orientation-permission-ui="enabled: true">
-
-   <a-assets>
-  <a-asset-item id="prueba_glb" src="assets/prueba_glb.glb">
-  </a-asset-item>
-
-  <a-asset-item id="prueba_glb_2" src="assets/prueba_glb_2.glb">
-  </a-asset-item>
+  <a-assets>
+  <a-asset-item id="modelo1" src="assets/prueba_glb.glb"></a-asset-item>
+  <a-asset-item id="modelo2" src="assets/prueba_glb_2.glb"></a-asset-item>
 </a-assets>
 
-<a-camera position="0 0 0"
-          look-controls="enabled: false">
-</a-camera>
+<a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
+
+<a-light type="ambient" intensity="2"></a-light>
+<a-light type="directional" position="0 1 1" intensity="1"></a-light>
 
 <a-entity mindar-image-target="targetIndex: 0">
-
-  <a-light type="ambient" intensity="1"></a-light>
-
   <a-gltf-model
-      src="#prueba_glb"
-      position="0 0 0"
-      rotation="0 0 0"
-      scale="0.3 0.3 0.3">
+    src="#modelo1"
+    position="0 0 0.1"
+    rotation="90 0 0"
+    scale="0.3 0.3 0.3">
   </a-gltf-model>
-
 </a-entity>
 
 <a-entity mindar-image-target="targetIndex: 1">
-
-  <a-light type="ambient" intensity="1"></a-light>
-
   <a-gltf-model
-      src="#prueba_glb_2"
-      position="0 0 0"
-      rotation="0 0 0"
-      scale="0.3 0.3 0.3">
+    src="#modelo2"
+    position="0 0 0.1"
+    rotation="90 0 0"
+    scale="0.3 0.3 0.3">
   </a-gltf-model>
-
 </a-entity>
-</a-scene> 
+  </a-scene> 
 </body>
 </html>
