@@ -51,24 +51,28 @@
 
 <a-light type="ambient" intensity="2"></a-light>
 <a-light type="directional" position="0 1 1" intensity="1"></a-light>
-
-<a-entity mindar-image-target="targetIndex: 0">
-  <a-gltf-model
-    src="#modelo1"
-    position="0 0 0.1"
-    rotation="90 0 0"
-    scale="0.3 0.3 0.3">
-  </a-gltf-model>
+    
+<a-entity id="contenedor-corrector-1" position="0 0 0" rotation="0 0 0" scale="1 1 1">
+  <a-entity mindar-image-target="targetIndex: 0">
+    <a-gltf-model
+      src="#modelo1"
+      position="0 0 0"
+      rotation="90 0 0"
+      scale="1 1 1">
+    </a-gltf-model>
+  </a-entity>
 </a-entity>
-
+    
 <a-entity mindar-image-target="targetIndex: 1">
-  <a-gltf-model
-    src="#modelo2"
-    position="0 0 0.1"
-    rotation="90 0 0"
-    scale="0.3 0.3 0.3">
-  </a-gltf-model>
+  <a-entity id="contenedor-corrector-2" position="0 0 0" rotation="0 0 0" scale="1 1 1">
+    <a-gltf-model
+      src="#modelo2"
+      position="0 0 0"
+      rotation="90 0 0"
+      scale="1 1 1">
+    </a-gltf-model>
+  </a-entity>
 </a-entity>
-  </a-scene> 
+</a-scene> 
 </body>
 </html>
