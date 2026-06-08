@@ -37,7 +37,7 @@
   </div>
 
   <a-scene
-    mindar-image="imageTargetSrc: assets/targets.mind;maxTrack: 2;"
+    mindar-image="imageTargetSrc: assets/targets.mind; maxTrack: 2; filterMinCF: 0.001; filterBeta: 1000;"
     color-space="sRGB"
     renderer="colorManagement: true; physicallyCorrectLights: true;"
     vr-mode-ui="enabled: false"
@@ -58,7 +58,7 @@
         src="#modelo1"
         position="0 0 0"
         rotation="90 0 0"
-        scale="0.08 0.08 0.08">
+        scale="0.1 0.1 0.1">
       </a-gltf-model>
     </a-entity>
     
@@ -67,7 +67,7 @@
         src="#modelo2"
         position="0 0 0"
         rotation="90 0 0"
-        scale="0.08 0.08 0.08">
+        scale="0.1 0.1 0.1">
       </a-gltf-model>
     </a-entity>
     
